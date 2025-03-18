@@ -295,7 +295,20 @@ animation: eat 1s linear 0s infinite;
         color: white;
         margin-top: 20px;
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
+    }
+    #aboutme{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 1px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
     }
     .gim{
         margin-left: -200px;
