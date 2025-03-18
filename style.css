@@ -438,7 +438,6 @@ animation: eat 1s linear 0s infinite;
     .logo{
         display: flex;
         margin-top: 20px;
-        margin-left: 20px;
     }
     #pr{
         width:40px;
