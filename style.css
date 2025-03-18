@@ -524,6 +524,9 @@ animation: eat 1s linear 0s infinite;
         justify-content: center;
         align-items: center;
     }
+    .gimball{
+        margin-left: 6px;
+    }
     .pendulum{ 
         width: 150px;
         height: 120px;
