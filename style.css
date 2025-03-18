@@ -74,6 +74,15 @@
     background-color: white;
     border-radius: 20px;
 }
+.logo{
+    display: flex;
+    margin-top: 20px;
+}
+#pr{
+    width:70px;
+    height:70px;
+    padding: 10px;
+}
 * {
 border: 0;
 box-sizing: border-box;
@@ -393,6 +402,16 @@ animation: eat 1s linear 0s infinite;
         padding-bottom: 10px;
         background-color: white;
         border-radius: 20px;
+    }
+    .logo{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #pr{
+        width:40px;
+        height:40px;
+        padding: 5px;
     }
     
 }
