@@ -1,0 +1,345 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.menu{
+    display: flex;
+    flex-direction:column;
+}
+#textmain{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#aboutme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+#aboutme2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+#aboutme3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+#aboutme4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+* {
+border: 0;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body, input {
+font: 80px/1.5 sans-serif;
+}
+body, input[type=checkbox]:before {
+background-image:
+    linear-gradient(90deg,#3a3d46 2px,#3a3d4600 2px),
+    linear-gradient(#3a3d46 2px,#2e3138 2px);
+background-repeat: repeat;
+background-size: 0.75em 0.375em;
+}
+body {
+background-position: 50% calc(50% + 0.2em);
+display: grid;
+place-items: center;
+height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+body, input[type=checkbox]:before {
+background-image:
+linear-gradient(90deg,#3a3d46 2px,#3a3d4600 2px),
+linear-gradient(#3a3d46 2px,#2e3138 2px);
+}
+input[type=checkbox] {
+--off: #5c6270;
+--mid: #3d5fb6;
+}
+}
+
+#box {
+    position: absolute;
+    left: 0;
+    bottom: -.1em;
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    border: .25em solid whitesmoke;
+    border-radius: 15%;
+    transform: translate(0, -1em) rotate(-45deg);
+    animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+}
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+p{
+    color:#FFF;
+    font: 50px 'Press Start 2P',  cursive;
+    margin:200px 139px;
+    position:absolute;
+    text-align:center;
+}
+.gim{
+    margin-left: -900px;
+    margin-bottom: 70px;
+}
+.pacman{
+    margin:40px 10px;
+}
+
+.pacman-top{
+    background-color:yellow;
+    height:50px;
+    width:100px;
+    border-radius:100px 100px 0 0;
+    animation: spin1 0.5s infinite linear;
+}
+
+.pacman-bottom{
+    background-color:yellow;
+    height:50px;
+    width:100px;
+    border-radius:0 0 100px 100px;
+    animation: spin2 0.5s infinite linear;
+}
+
+.feed {
+margin-top: -130px;
+margin-left:15px;
+width: 25px;
+height: 25px;
+border-radius: 30%;
+-moz-animation: eat 1s linear 0s infinite;
+-webkit-animation: eat 1s linear 0s infinite;
+animation: eat 1s linear 0s infinite;
+}   
+
+/* Animation*/
+
+@keyframes spin1 {
+      0%  {transform: rotate(0deg);}
+      50%{transform: rotate(-35deg);}
+    
+}
+@keyframes spin2 {
+      0%  {transform: rotate(0deg);}
+    50%{transform: rotate(35deg);}	
+}
+
+@-moz-keyframes spin1 {
+      0%  {transform: rotate(0deg);}
+      50%{transform: rotate(-35deg);}
+    
+}
+@-moz-keyframes spin2 {
+      0%  {transform: rotate(0deg);}
+    50%{transform: rotate(35deg);}	
+}
+
+@-webkit-keyframes spin1 {
+      0%  {transform: rotate(0deg);}
+      50%{transform: rotate(-35deg);}
+    
+}
+@-webkit-keyframes spin2 {
+      0%  {transform: rotate(0deg);}
+    50%{transform: rotate(35deg);}	
+}
+
+@keyframes eat {
+      0% { box-shadow: 
+        100px 65px 0 0 white, 
+        300px 65px 0 0 white, 
+        500px 65px 0 0 white, 
+        700px 65px 0 0 white,
+        900px 65px 0 0 white, 
+        1100px 65px 0 0 white, 
+        1300px 65px 0 0 white;}
+    
+  100% { box-shadow: 
+        0px 65px 0 0 white, 
+        100px 65px 0 0 white,
+        300px 65px 0 0 white, 
+        500px 65px 0 0 white, 
+        700px 65px 0 0 white, 
+        900px 65px 0 0 white, 
+        1100px 65px 0 0 white;}
+}
+
+
+
+@-moz-keyframes eat {
+      0% { box-shadow: 
+        100px 65px 0 0 white, 
+        300px 65px 0 0 white, 
+        500px 65px 0 0 white, 
+        700px 65px 0 0 white,
+        900px 65px 0 0 white, 
+        1100px 65px 0 0 white, 
+        1300px 65px 0 0 white;}
+    
+  100% { box-shadow: 
+        0px 65px 0 0 white, 
+        100px 65px 0 0 white,
+        300px 65px 0 0 white, 
+        500px 65px 0 0 white, 
+        700px 65px 0 0 white, 
+        900px 65px 0 0 white, 
+        1100px 65px 0 0 white;}
+}
+
+
+
+@-webkit-keyframes eat {
+      0% { box-shadow: 
+        100px 65px 0 0 white, 
+        300px 65px 0 0 white, 
+        500px 65px 0 0 white, 
+        700px 65px 0 0 white,
+        900px 65px 0 0 white, 
+        1100px 65px 0 0 white, 
+        1300px 65px 0 0 white;}
+    
+  100% { box-shadow: 
+        0px 65px 0 0 white, 
+        100px 65px 0 0 white,
+        300px 65px 0 0 white, 
+        500px 65px 0 0 white, 
+        700px 65px 0 0 white, 
+        900px 65px 0 0 white, 
+        1100px 65px 0 0 white;}
+}
+
+
+@keyframes push {
+    0% {
+      transform: translate(0, -1em) rotate(-45deg);
+    }
+    5% {
+      transform: translate(0, -1em) rotate(-50deg);
+    }
+    20% {
+      transform: translate(1em, -2em) rotate(47deg);
+    }
+    25% {
+      transform: translate(1em, -2em) rotate(45deg);
+    }
+    30% {
+      transform: translate(1em, -2em) rotate(40deg);
+    }
+    45% {
+      transform: translate(2em, -3em) rotate(137deg);
+    }
+    50% {
+      transform: translate(2em, -3em) rotate(135deg);
+    }
+    55% {
+      transform: translate(2em, -3em) rotate(130deg);
+    }
+    70% {
+      transform: translate(3em, -4em) rotate(217deg);
+    }
+    75% {
+      transform: translate(3em, -4em) rotate(220deg);
+    }
+    100% {
+      transform: translate(0, -1em) rotate(-225deg);
+    }
+}
+@media(max-width:450px){
+    #textmain{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .gim{
+        margin-left: -200px;
+        margin-bottom: 70px;
+    }
+    .pacman-top{
+        background-color:yellow;
+        height:20px;
+        width:40px;
+        border-radius:100px 100px 0 0;
+        animation: spin1 0.5s infinite linear;
+    }
+    
+    .pacman-bottom{
+        background-color:yellow;
+        height:20px;
+        width:40px;
+        border-radius:0 0 100px 100px;
+        animation: spin2 0.5s infinite linear;
+    }
+    
+    .feed {
+    margin-top: -90px;
+    margin-left:15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 30%;
+    -moz-animation: eat 1s linear 0s infinite;
+    -webkit-animation: eat 1s linear 0s infinite;
+    animation: eat 1s linear 0s infinite;
+    }   
+    #aboutme3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 1px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+
