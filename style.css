@@ -92,20 +92,27 @@
     height:70px;
     padding: 10px;
 }
+a:hover{
+    opacity: 0.8;
+}
 .butig{
     border: 2px solid transparent;
     border-radius: 20px;
     margin-top: 20px;
     width: 230px;
+    background-color: white;
+    font-weight: 10;
 }
 .textig{
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
+    font-weight: 10;
 }
 .so{
     padding-bottom: 30px;
 }
+
 
 * {
 border: 0;
@@ -432,6 +439,7 @@ animation: eat 1s linear 0s infinite;
         text-decoration: none;
         font-size: 20px;
         padding: 8px;
+        padding-bottom: 0;
     }
     .so{
         padding-bottom: 30px;
