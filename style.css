@@ -722,6 +722,148 @@ animation: eat 1s linear 0s infinite;
         transform: rotate(-35deg);
         }
     }
+    .loop-wrapper {
+      margin: 0 auto;
+      margin-top: -50px; /* ลดลงครึ่งหนึ่ง */
+      position: relative;
+      display: block;
+      width: 430px; /* ลดลงครึ่งหนึ่ง */
+      height: 125px; /* ลดลงครึ่งหนึ่ง */
+      overflow: hidden;
+      border-bottom: 1.5px solid #fff; /* ลดลงครึ่งหนึ่ง */
+      color: #fff;
+  }
+  .mountain {
+      position: absolute;
+      right: -450px; /* ลดลงครึ่งหนึ่ง */
+      bottom: -10px; /* ลดลงครึ่งหนึ่ง */
+      width: 1px; /* ลดลงครึ่งหนึ่ง */
+      height: 1px; /* ลดลงครึ่งหนึ่ง */
+      box-shadow: 
+          0 0 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          30px 25px 0 35px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          45px 45px 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          125px 125px 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          145px 160px 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          160px 200px 0 25px #4DB6AC; /* ลดลงครึ่งหนึ่ง */
+      transform: rotate(130deg);
+      animation: mtn 20s linear infinite;
+  }
+  .hill {
+      position: absolute;
+      right: -450px; /* ลดลงครึ่งหนึ่ง */
+      bottom: -25px; /* ลดลงครึ่งหนึ่ง */
+      width: 200px; /* ลดลงครึ่งหนึ่ง */
+      border-radius: 50%;
+      height: 10px; /* ลดลงครึ่งหนึ่ง */
+      box-shadow: 
+          0 0 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          -10px 0 0 10px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          -45px 0 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          125px 0 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          145px 0 0 25px #4DB6AC, /* ลดลงครึ่งหนึ่ง */
+          310px 0 0 25px #4DB6AC; /* ลดลงครึ่งหนึ่ง */
+      animation: hill 4s 2s linear infinite;
+  }
+  .tree, .tree:nth-child(2), .tree:nth-child(3) {
+      position: absolute;
+      height: 50px; /* ลดลงครึ่งหนึ่ง */
+      width: 17.5px; /* ลดลงครึ่งหนึ่ง */
+      bottom: 0;
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/tree.svg) no-repeat;
+      background-size: contain;
+  }
+  .rock {
+      margin-top: -8.5%; /* ลดลงครึ่งหนึ่ง */
+      height: 1%; /* ลดลงครึ่งหนึ่ง */
+      width: 1%; /* ลดลงครึ่งหนึ่ง */
+      bottom: -1px; /* ลดลงครึ่งหนึ่ง */
+      border-radius: 10px; /* ลดลงครึ่งหนึ่ง */
+      position: absolute;
+      background: #ddd;
+  }
+  .truck, .wheels {
+      transition: all ease;
+      width: 42.5px; /* ลดลงครึ่งหนึ่ง */
+      margin-right: -30px; /* ลดลงครึ่งหนึ่ง */
+      bottom: 0px;
+      right: 50%;
+      position: absolute;
+      background: #eee;
+  }
+  .truck {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/truck.svg) no-repeat;
+      background-size: contain;
+      height: 30px; /* ลดลงครึ่งหนึ่ง */
+  }
+  .truck:before {
+      content: " ";
+      position: absolute;
+      width: 12.5px; /* ลดลงครึ่งหนึ่ง */
+      box-shadow:
+          -15px 14px 0 0.75px #fff, /* ลดลงครึ่งหนึ่ง */
+          -17.5px 9px 0 0.75px #fff; /* ลดลงครึ่งหนึ่ง */
+  }
+  .wheels {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/wheels.svg) no-repeat;
+      background-size: contain;
+      height: 7.5px; /* ลดลงครึ่งหนึ่ง */
+      margin-bottom: 0;
+  }
+  
+  .tree  { animation: tree 3s 0.000s linear infinite; }
+  .tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
+  .tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+  .rock  { animation: rock 4s   -0.530s linear infinite; }
+  .truck  { animation: truck 4s   0.080s ease infinite; }
+  .wheels  { animation: truck 4s   0.001s ease infinite; }
+  .truck:before { animation: wind 1.5s   0.000s ease infinite; }
+  
+  
+  @keyframes tree {
+      0%   { transform: translate(675px); } /* ลดลงครึ่งหนึ่ง */
+      50% {}
+      100% { transform: translate(-25px); } /* ลดลงครึ่งหนึ่ง */
+  }
+  @keyframes tree2 {
+      0%   { transform: translate(325px); } /* ลดลงครึ่งหนึ่ง */
+      50% {}
+      100% { transform: translate(-25px); } /* ลดลงครึ่งหนึ่ง */
+  }
+  @keyframes tree3 {
+      0%   { transform: translate(1375px); } /* ลดลงครึ่งหนึ่ง */
+      50% {}
+      100% { transform: translate(-25px); } /* ลดลงครึ่งหนึ่ง */
+  }
+  
+  @keyframes rock {
+      0%   { right: -100px; } /* ลดลงครึ่งหนึ่ง */
+      100% { right: 1000px; } /* ลดลงครึ่งหนึ่ง */
+  }
+  @keyframes truck {
+      0%   { }
+      6%   { transform: translateY(0px); }
+      7%   { transform: translateY(-3px); } /* ลดลงครึ่งหนึ่ง */
+      9%   { transform: translateY(0px); }
+      10%   { transform: translateY(-0.5px); } /* ลดลงครึ่งหนึ่ง */
+      11%   { transform: translateY(0px); }
+      100%   { }
+  }
+  @keyframes wind {
+      0%   {  }
+      50%   { transform: translateY(1.5px) } /* ลดลงครึ่งหนึ่ง */
+      100%   { }
+  }
+  @keyframes mtn {
+      100% {
+          transform: translateX(-1000px) rotate(130deg); /* ลดลงครึ่งหนึ่ง */
+      }
+  }
+  @keyframes hill {
+      100% {
+          transform: translateX(-1000px); /* ลดลงครึ่งหนึ่ง */
+      }
+  }
     
 }    
 
