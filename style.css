@@ -14,6 +14,13 @@
     text-align: center;
     font-size: 50px;
 }
+#textmain2{
+    font-family:'play';
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 100px;
+}
 .line{
     width: 525px;
     height: 5px;
@@ -176,6 +183,13 @@ height: 100vh;
         margin-top: 65px;
         text-align: center;
         font-size: 30px;
+    }
+    #textmain2{
+        font-family:'play';
+        color: white;
+        margin-top: 5px;
+        text-align: center;
+        font-size: 60px;
     }
     #cat{
         width: 180px;
