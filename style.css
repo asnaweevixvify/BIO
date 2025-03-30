@@ -287,6 +287,9 @@ height: 100vh;
         background-color: white;
         margin-left: 20px;
     }
+    .proall{
+        display: flex;
+    }
     .textig{
         text-decoration: none;
         font-size: 17px;
