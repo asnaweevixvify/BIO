@@ -182,14 +182,14 @@ height: 100vh;
         color: white;
         margin-top: 65px;
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
     }
     #textmain2{
         font-family:'play';
         color: white;
-        margin-top: 5px;
+        margin-top: 1px;
         text-align: center;
-        font-size: 60px;
+        font-size: 80px;
     }
     #cat{
         width: 180px;
