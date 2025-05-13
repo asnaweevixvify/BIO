@@ -445,14 +445,14 @@ height: 100vh;
     }
     .logoall{
         background-color: #212225;
-        margin-top: 20px;
+        margin-top: 10px;
         border: 2px solid transparent;
         border-radius: 15px;
     }
     #pr{
-        width:40px;
-        height:40px;
-        padding: 5px;
+        width:30px;
+        height:30px;
+        padding: 4px;
     }
     .statson{
         width: 250px;
