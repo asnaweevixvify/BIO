@@ -213,7 +213,12 @@ a:hover{
 .so{
     padding-bottom: 30px;
 }
-
+.stats{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 .statson{
     margin-top: 20px;
     display: flex;
